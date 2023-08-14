@@ -1,5 +1,8 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
+import { Catalog } from './Catalog';
+import { ProductDetail } from './ProductDetail';
 import { ItemListContainer } from './components/ItemListContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,6 +15,8 @@ function App() {
     <>
      <NavBar />
      <ItemListContainer />
+     <Catalog />
+     <ProductDetail />
     </>
   )
 }

@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../assets/img/logo.png';
 import '../components/NavBar.css';
 import { CartWidget } from './CartWidget';
+
 
 export const NavBar = () => {
     return(
@@ -14,8 +16,8 @@ export const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#link">Productos</Nav.Link>
+            <Link to="/">Inicio</Link>
+            <Link to="/cart">Carrito</Link>
             <Nav.Link href="#link">Ofertas</Nav.Link>
             <Nav.Link href="#link">Sobre Nosotros</Nav.Link>
           </Nav>
